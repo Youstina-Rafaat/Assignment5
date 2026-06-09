@@ -1449,4 +1449,294 @@ background-color:#00C950;
 .budget-percentage-2{
   color: #92400e;
   background-color: #FEF3C7;
+
+}
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 72px;
+    padding: 24px 12px;
+    overflow: hidden;
+  }
+
+  .sidebar .logo .info {
+    display: none;
+  }
+
+  .links li {
+    padding: 14px;
+    text-align: center;
+  }
+
+  .links li span {
+    display: none;
+  }
+
+  .links li i {
+    margin-left: 0;
+    font-size: 18px;
+    display: block;
+  }
+
+  .quick-actions {
+    display: none;
+  }
+
+  .btn-quick-actions {
+    padding: 10px 4px;
+    text-align: center;
+  }
+
+  .btn-quick-actions span {
+    display: none;
+  }
+
+  .btn-quick-actions .icon {
+    margin-left: 0;
+    margin: auto;
+  }
+
+  .content {
+    margin-right: 72px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header header header header"
+      "balance balance income income expenses expenses"
+      "sidebar-panels sidebar-panels sidebar-panels  income-expenses income-expenses income-expenses "
+      "transactions transactions transactions transactions transactions transactions"
+      "transactions transactions transactions transactions transactions transactions"
+      "bills-panels bills-panels bills-panels account-summary account-summary account-summary"
+      "budget-overview budget-overview budget-overview payment-methods payment-methods payment-methods";
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .balance,
+  .income,
+  .expenses {
+    padding: 20px;
+  }
+
+  .number {
+    font-size: 26px;
+  }
+  .total::before{
+    width: 90%;
+  }
+.budget-item::before{
+  width: 90%;
+}
+.chart-legend::before{
+  right: 153;
+}
+.chart-legend::after{
+  right: 217;
+}
+
+}
+
+@media (max-width: 640px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #dashboard {
+    overflow-x: hidden;
+  }
+  .sidebar {
+    display: none;
+  }
+  .content {
+    margin-right: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "balance"
+      "income"
+      "expenses"
+      
+      "sidebar-panels"
+      "transactions"
+      "bills-panels"
+      "budget-overview"
+      "income-expenses"
+      "account-summary"
+      "payment-methods";
+    padding: 12px;
+    gap: 12px;
+  }
+  .header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:column ;
+    padding: 15px 14px;
+    margin-bottom: 0;
+    gap: 8px;
+    height: 200px;
+  }
+  .logo{
+    position: relative;
+  }
+  .active{
+    position: absolute;
+    top: 128;
+    width: 98%;
+    text-align: center;
+    margin: auto;
+  }
+  .active div {
+    width: 7px;
+    height: 7px;
+  }
+
+  .active span {
+    font-size: 11px;
+  }
+  .info .title {
+    font-size: 22px;
+  }
+  .coins {
+    width: 40px;
+    height: 40px;
+  }
+
+  .coins i {
+    font-size: 15px;
+    margin-top: 12px;
+  }
+
+  .image span{
+    display: none;
+  }
+.image{
+  width: 60px;
+  padding: 8px 0 8px 30px;
+  margin-right: 300px;
+  margin-top: -170px;
+}
+
+  .info .desc {
+    font-size: 10px;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+
+  .header-actions button {
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+    margin-top: -160px;
+  }
+  .balance,
+  .income,
+  .expenses {
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  .number {
+    font-size: 28px;
+  }
+
+  .transactions {
+    padding: 16px;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .transaction-details {
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+  }
+
+  .transaction-details::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .transaction-details::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  .transaction-details::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 10px;
+  }
+
+  table {
+    min-width: 680px;
+    font-size: 13px;
+  }
+
+  th {
+    padding: 14px 6px;
+    font-size: 13px;
+  }
+
+  td {
+    padding: 14px 6px;
+    font-size: 13px;
+  }
+
+  .transaction-item img,
+  .transaction-item .transaction-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .transaction-item i {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .sidebar-panels,
+  .bills-panels,
+  .budget-overview,
+  .income-expenses,
+  .account-summary,
+  .payment-methods {
+    border-radius: 14px;
+    padding: 16px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  .bills-list {
+    gap: 8px;
+  }
+
+  .bills-item {
+    width: 47%;
+  }
+  .budget-category {
+    padding: 14px 14px 18px 14px;
+  }
+
+  .total::before,
+  .budget-item::before {
+    width: 100%;
+  }
+  .account-item {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+    .total::before{
+    width: 92%;
+  }
+.budget-item::before{
+  width: 92%;
+}
+.chart-legend::before{
+  top: 80;
+  right: 175;
+}
+.chart-legend::after{
+  top: 80;
+  right:235;
+}
 }
