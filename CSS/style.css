@@ -185,23 +185,6 @@ h3{
 .btn-quick-actions:hover .chart{
   background-color: #FCE5D5;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .content {  
   margin-right: 255px;
   display: grid;
@@ -339,14 +322,6 @@ h3{
   align-items: center;
   justify-content: center;
 }
-
-
-
-
-
-
-
-
 .expenses { 
   grid-area: expenses;
   padding: 32px;
@@ -376,13 +351,6 @@ h3{
   color:#E7000B ;
 }
 
-
-
-
-
-
-
-
 .income { 
   grid-area: income;
   padding: 32px;
@@ -391,15 +359,6 @@ border: 1.5px solid #EAEBEC;
   border-radius: 18px;
   box-shadow: 0 0 13px rgba(0,0,0,0.05);
 }
-
-
-
-
-
-
-
-
-
 .balance { 
   grid-area: balance; 
   padding: 32px;
@@ -408,17 +367,6 @@ border: 1.5px solid #EAEBEC;
   box-shadow: 0 0 13px rgba(0,0,0,0.05);
   background-color: #fff;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .sidebar-panels { 
   grid-area: sidebar-panels;
@@ -507,15 +455,6 @@ border: 1.5px solid #EAEBEC;
 .activity-btn:hover{
   color: #1447e6;
 }
-
-
-
-
-
-
-
-
-
 .bills-panels { 
   grid-area: bills-panels;
   background-color: #fff;
@@ -603,19 +542,6 @@ border: 1.5px solid #EAEBEC;
 .time-tv{
   color:#6a7282 ;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .transactions {
    grid-area: transactions; 
    background-color: #FFFFFF;
@@ -1059,46 +985,6 @@ margin-top: -45px;
   padding: 6px 10px;
   border-radius: 8px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .income-expenses {
    grid-area: income-expenses; 
   position: relative;
@@ -1181,29 +1067,6 @@ margin-top: -45px;
 .bar-income:hover::after{
   background-color: #F26969;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .account-summary {
    grid-area: account-summary;
    background: #fff;
@@ -1258,14 +1121,6 @@ margin-top: -45px;
 .account-balance-negative{
   color:#e7000b ;
 }
-
-
-
-
-
-
-
-
 
 .budget-overview { 
   grid-area: budget-overview;
